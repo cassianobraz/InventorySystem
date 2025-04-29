@@ -1,4 +1,4 @@
-namespace InventorySystem.Api
+namespace IntentorySystem.Api
 {
     public class WeatherForecast
     {

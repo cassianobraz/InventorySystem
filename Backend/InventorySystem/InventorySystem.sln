@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventorySystem.Api", "src\IntentorySystem.Api\InventorySystem.Api\InventorySystem.Api.csproj", "{92BE0D26-35FF-4009-8534-C7C4F63BCC1D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntentorySystem.Api", "src\IntentorySystem.Api\IntentorySystem.Api.csproj", "{F02207CD-5B33-496D-9D5B-E1F6CD1598B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{92BE0D26-35FF-4009-8534-C7C4F63BCC1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92BE0D26-35FF-4009-8534-C7C4F63BCC1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92BE0D26-35FF-4009-8534-C7C4F63BCC1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92BE0D26-35FF-4009-8534-C7C4F63BCC1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02207CD-5B33-496D-9D5B-E1F6CD1598B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02207CD-5B33-496D-9D5B-E1F6CD1598B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02207CD-5B33-496D-9D5B-E1F6CD1598B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02207CD-5B33-496D-9D5B-E1F6CD1598B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{92BE0D26-35FF-4009-8534-C7C4F63BCC1D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{F02207CD-5B33-496D-9D5B-E1F6CD1598B7} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4E944374-C342-449B-9204-6BAAE2F1A188}

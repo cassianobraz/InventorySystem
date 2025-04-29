@@ -1,0 +1,6 @@
+@IntentorySystem.Api_HostAddress = http://localhost:5225
+
+GET {{IntentorySystem.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
