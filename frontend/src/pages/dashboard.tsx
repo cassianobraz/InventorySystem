@@ -19,7 +19,7 @@ export function Dashboard() {
     <div className="flex flex-row bg-[#fafafa] min-h-screen">
       <SideBar />
       <div className="w-full flex flex-col items-center justify-start">
-        <Header />
+        <Header currentLocation="Dashboard" />
         <div className="w-4/5 mt-20">
           <h1 className="text-2xl font-semibold mb-1">Bem-Vindo, Patrik Malta</h1>
           <p className="text-gray-500 mb-8">Overview</p>

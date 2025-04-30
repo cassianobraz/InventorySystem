@@ -15,7 +15,7 @@ interface TabelaComponentesProps {
 export function Table({ dados }: TabelaComponentesProps) {
   return (
     <div className="flex justify-center items-center min-h-screen">
-      <div className="overflow-x-auto rounded-lg mt-20 w-full max-w-6xl">
+      <div className="overflow-x-auto rounded-lg w-full max-w-6xl">
         <table className="text-sm text-left w-full">
           <thead className="text-gray-600 font-bold text-xl border-b">
             <tr>
