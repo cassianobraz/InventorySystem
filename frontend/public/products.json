@@ -1,12 +1,11 @@
 [
-    { "codigo": "1", "nome": "PNEU 90-90-18", "saldo": 1242 },
+    { "codigo": "1", "nome": "PNEU 90-90-18", "saldo": 12 },
     { "codigo": "2", "nome": "CAMARA AR ARO 18", "saldo": 5 },
     { "codigo": "3", "nome": "KIT CPA TITAN 150", "saldo": 8 },
     { "codigo": "4", "nome": "RETROVISOR TITAN 150 14", "saldo": 2 },
     { "codigo": "5", "nome": "JUNTA KIT A TITAN 150", "saldo": 0 },
     { "codigo": "6", "nome": "VALV ADM TITAN 150", "saldo": 3 },
-    { "codigo": "7", "nome": "VALV ESC TITAN 150", "saldo": 3 },
-    { "codigo": "8", "nome": "VALV ADM TITAN 160", "saldo": 3 },
-    { "codigo": "8", "nome": "VALV ADM TITAN 160", "saldo": 3 }
+    { "codigo": "7", "nome": "VALV ESC TITAN 150", "saldo": 3 }
+
 ]
   
