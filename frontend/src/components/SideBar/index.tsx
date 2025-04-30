@@ -7,7 +7,7 @@ import logo from "../../assets/logo.png";
 export function SideBar() {
   return (
     <div className="w-72 h-screen bg-[#086632] flex flex-col items-center">
-        <img src={logo} alt="Logo do sistema" className="h-80"/>
+        <img src={logo} alt="Logo do sistema" className="h-50"/>
 
         <div className="w-full flex flex-col items-center mt-5">
             <Link to="/dash" 
