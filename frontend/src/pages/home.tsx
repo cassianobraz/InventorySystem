@@ -6,7 +6,7 @@ export function Home() {
 
       <header className="w-full py-6 px-10 bg-white shadow-sm flex justify-between items-center">
         <h1 className="text-2xl font-bold text-[#086632]">InventoryCloud</h1>
-        <nav className="flex gap-6 text-gray-600 flex flex-row items-center">
+        <nav className="flex gap-6 text-gray-600 flex-row items-center">
           <a href="#sobre" className="hover:text-[#086632] transition">Sobre</a>
           <a href="#recursos" className="hover:text-[#086632] transition">Recursos</a>
           <Link to="/dash" className="bg-[#086632] text-white px-6 py-2 rounded-lg hover:bg-[#0b7d4b] transition">
