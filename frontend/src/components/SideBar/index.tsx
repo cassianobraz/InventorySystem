@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { LuInbox } from "react-icons/lu";
 import { LuLayoutDashboard } from "react-icons/lu";
 import { IoMdExit } from "react-icons/io";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/Logo.png";
 
 export function SideBar() {
   return (
