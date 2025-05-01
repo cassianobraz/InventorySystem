@@ -1,0 +1,295 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\InventorySystem.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\InventorySystem.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\InventorySystem.Api.csproj",
+        "projectName": "InventorySystem.Api",
+        "projectPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\InventorySystem.Api.csproj",
+        "packagesPath": "C:\\Users\\cassa\\.nuget\\packages\\",
+        "outputPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cassa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Application\\InventorySystem.Application.csproj": {
+                "projectPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Application\\InventorySystem.Application.csproj"
+              },
+              "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {
+                "projectPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj"
+              },
+              "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Exception\\InventorySystem.Exception.csproj": {
+                "projectPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Exception\\InventorySystem.Exception.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.15, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Application\\InventorySystem.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Application\\InventorySystem.Application.csproj",
+        "projectName": "InventorySystem.Application",
+        "projectPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Application\\InventorySystem.Application.csproj",
+        "packagesPath": "C:\\Users\\cassa\\.nuget\\packages\\",
+        "outputPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cassa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
+        "projectName": "InventorySystem.Communication",
+        "projectPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
+        "packagesPath": "C:\\Users\\cassa\\.nuget\\packages\\",
+        "outputPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cassa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Exception\\InventorySystem.Exception.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Exception\\InventorySystem.Exception.csproj",
+        "projectName": "InventorySystem.Exception",
+        "projectPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Exception\\InventorySystem.Exception.csproj",
+        "packagesPath": "C:\\Users\\cassa\\.nuget\\packages\\",
+        "outputPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Exception\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cassa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

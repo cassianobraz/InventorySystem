@@ -1,0 +1,12 @@
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\bin\Debug\net8.0\InventorySystem.Application.deps.json
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\bin\Debug\net8.0\InventorySystem.Application.dll
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\bin\Debug\net8.0\InventorySystem.Application.pdb
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\obj\Debug\net8.0\InventorySystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\obj\Debug\net8.0\InventorySystem.Application.AssemblyInfoInputs.cache
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\obj\Debug\net8.0\InventorySystem.Application.AssemblyInfo.cs
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\obj\Debug\net8.0\InventorySystem.Application.csproj.CoreCompileInputs.cache
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\obj\Debug\net8.0\InventorySystem.Application.sourcelink.json
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\obj\Debug\net8.0\InventorySystem.Application.dll
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\obj\Debug\net8.0\refint\InventorySystem.Application.dll
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\obj\Debug\net8.0\InventorySystem.Application.pdb
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Application\obj\Debug\net8.0\ref\InventorySystem.Application.dll

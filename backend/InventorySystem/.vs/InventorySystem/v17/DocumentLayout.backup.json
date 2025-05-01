@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\cassiano c#\\rocket\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\entities\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\entities\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\cassiano c#\\rocket\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\infrastructure\\inventorydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\infrastructure\\inventorydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Stock.cs",
+              "DocumentMoniker": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Entities\\Stock.cs",
+              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\Entities\\Stock.cs",
+              "ToolTip": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Entities\\Stock.cs*",
+              "RelativeToolTip": "src\\InventorySystem.Api\\Entities\\Stock.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:20:04.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InventoryDBContext.cs",
+              "DocumentMoniker": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Infrastructure\\InventoryDBContext.cs",
+              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\Infrastructure\\InventoryDBContext.cs",
+              "ToolTip": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Infrastructure\\InventoryDBContext.cs*",
+              "RelativeToolTip": "src\\InventorySystem.Api\\Infrastructure\\InventoryDBContext.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T19:15:11.108Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
