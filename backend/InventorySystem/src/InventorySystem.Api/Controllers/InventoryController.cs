@@ -1,4 +1,5 @@
-﻿using InventorySystem.Api.UseCases.Stocks.GetAll;
+﻿using InventorySystem.Api.UseCases.Stocks.Delete;
+using InventorySystem.Api.UseCases.Stocks.GetAll;
 using InventorySystem.Api.UseCases.Stocks.Register;
 using InventorySystem.Api.UseCases.Stocks.Update;
 using InventorySystem.Communication.Requests;
@@ -79,7 +80,18 @@ public class InventoryController : ControllerBase
     [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status404NotFound)]
     public IActionResult Delete([FromRoute] int id)
     {
-        return NoContent();
+        try
+        {
+            var useCase = new DeleteInventoryUseCase();
+
+            useCase.Execute(id);
+
+            return NoContent();
+        }
+        catch (Exception ex)
+        {
+            throw new ArgumentException("error updating item", ex);
+        }
     }
 }
 
