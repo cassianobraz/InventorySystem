@@ -1,5 +1,6 @@
 ﻿using InventorySystem.Api.UseCases.Stocks.GetAll;
 using InventorySystem.Api.UseCases.Stocks.Register;
+using InventorySystem.Api.UseCases.Stocks.Update;
 using InventorySystem.Communication.Requests;
 using InventorySystem.Communication.Responses;
 using Microsoft.AspNetCore.Mvc;
@@ -35,7 +36,7 @@ public class InventoryController : ControllerBase
     [HttpPost]
     [ProducesResponseType(typeof(ResponseShortInventoryJson), StatusCodes.Status201Created)]
     [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
-    public IActionResult AddItem([FromBody] RequestStockJson request)
+    public IActionResult Register([FromBody] RequestStockJson request)
     {
         try
         {
@@ -53,14 +54,30 @@ public class InventoryController : ControllerBase
 
     [HttpPut]
     [Route("{id}")]
-    public IActionResult UpdateItem([FromRoute] int id, [FromBody] string item)
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status404NotFound)]
+    public IActionResult Update([FromRoute] int id, [FromBody] RequestStockJson request)
     {
-        return Ok(item);
+        try
+        {
+            var useCase = new UpdateInventoryUseCase();
+
+            useCase.Execute(id, request);
+
+            return NoContent();
+        }
+        catch (Exception ex)
+        {
+            throw new ArgumentException("error updating item", ex);
+        }
     }
 
     [HttpDelete]
     [Route("{id}")]
-    public IActionResult DeleteItem([FromRoute] int id)
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status404NotFound)]
+    public IActionResult Delete([FromRoute] int id)
     {
         return NoContent();
     }

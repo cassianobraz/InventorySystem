@@ -26,7 +26,7 @@
   },
   {
     "ContainingType": "InventorySystem.Api.Controllers.InventoryController",
-    "Method": "AddItem",
+    "Method": "Register",
     "RelativePath": "api/inventory",
     "HttpMethod": "POST",
     "IsController": true,
@@ -61,7 +61,7 @@
   },
   {
     "ContainingType": "InventorySystem.Api.Controllers.InventoryController",
-    "Method": "UpdateItem",
+    "Method": "Update",
     "RelativePath": "api/inventory/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -73,16 +73,40 @@
         "IsRequired": true
       },
       {
-        "Name": "item",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "InventorySystem.Communication.Requests.RequestStockJson",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "InventorySystem.Communication.Responses.ResponseErrorMessagesJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "InventorySystem.Communication.Responses.ResponseErrorMessagesJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
   },
   {
     "ContainingType": "InventorySystem.Api.Controllers.InventoryController",
-    "Method": "DeleteItem",
+    "Method": "Delete",
     "RelativePath": "api/inventory/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -94,6 +118,21 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      },
+      {
+        "Type": "InventorySystem.Communication.Responses.ResponseErrorMessagesJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 404
+      }
+    ]
   }
 ]
