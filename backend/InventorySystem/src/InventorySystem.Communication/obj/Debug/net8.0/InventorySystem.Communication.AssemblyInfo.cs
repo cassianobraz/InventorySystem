@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InventorySystem.Communication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ece6a7925959da0fb7d6077be02b2fe5b43f7fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f50b516beaa93ab0c6976a75d771c4e4b87c866b")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventorySystem.Communication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InventorySystem.Communication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

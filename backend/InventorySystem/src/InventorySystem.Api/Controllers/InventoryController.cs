@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using InventorySystem.Api.UseCases.Stocks.GetAll;
+using InventorySystem.Api.UseCases.Stocks.Register;
+using InventorySystem.Communication.Requests;
+using InventorySystem.Communication.Responses;
+using Microsoft.AspNetCore.Mvc;
 
 namespace InventorySystem.Api.Controllers;
 
@@ -7,16 +11,44 @@ namespace InventorySystem.Api.Controllers;
 public class InventoryController : ControllerBase
 {
     [HttpGet]
-    public IActionResult GetInventory()
+    [ProducesResponseType(typeof(ResponseAllStocksJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public IActionResult GetAll()
     {
-        var inventory = new List<string> { "Item1", "Item2", "Item3" };
-        return Ok(inventory);
+        try
+        {
+            var useCase = new GetAllInventoryUseCase();
+
+            var response = useCase.Execute();
+
+            if (response.Stocks.Count == 0)
+                return NoContent();
+
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            throw new ArgumentException("Error searching for stock", ex);
+        }
     }
 
     [HttpPost]
-    public IActionResult AddItem([FromBody] string item)
+    [ProducesResponseType(typeof(ResponseShortInventoryJson), StatusCodes.Status201Created)]
+    [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
+    public IActionResult AddItem([FromBody] RequestStockJson request)
     {
-        return Created();
+        try
+        {
+            var useCase = new RegisterInventoryUseCase();
+
+            var response = useCase.Execute(request);
+
+            return Created(string.Empty, response);
+        }
+        catch (Exception ex)
+        {
+            throw new ArgumentException("Error creating new item", ex);
+        }
     }
 
     [HttpPut]

@@ -8,15 +8,22 @@
     ".NETCoreApp,Version=v8.0": {
       "InventorySystem.Api/1.0.0": {
         "dependencies": {
-          "InventorySystem.Application": "1.0.0",
+          "FluentValidation": "11.11.0",
           "InventorySystem.Communication": "1.0.0",
-          "InventorySystem.Exception": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.15",
           "Microsoft.EntityFrameworkCore.Sqlite": "8.0.15",
           "Swashbuckle.AspNetCore": "6.6.2"
         },
         "runtime": {
           "InventorySystem.Api.dll": {}
+        }
+      },
+      "FluentValidation/11.11.0": {
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.11.0.0"
+          }
         }
       },
       "Microsoft.Data.Sqlite.Core/8.0.15": {
@@ -359,25 +366,9 @@
         }
       },
       "System.Memory/4.5.3": {},
-      "InventorySystem.Application/1.0.0": {
-        "runtime": {
-          "InventorySystem.Application.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
       "InventorySystem.Communication/1.0.0": {
         "runtime": {
           "InventorySystem.Communication.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "InventorySystem.Exception/1.0.0": {
-        "runtime": {
-          "InventorySystem.Exception.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -390,6 +381,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidation/11.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cyIVdQBwSipxWG8MA3Rqox7iNbUNUTK5bfJi9tIdm4CAfH71Oo5ABLP4/QyrUwuakqpUEPGtE43BDddvEehuYw==",
+      "path": "fluentvalidation/11.11.0",
+      "hashPath": "fluentvalidation.11.11.0.nupkg.sha512"
     },
     "Microsoft.Data.Sqlite.Core/8.0.15": {
       "type": "package",
@@ -587,17 +585,7 @@
       "path": "system.memory/4.5.3",
       "hashPath": "system.memory.4.5.3.nupkg.sha512"
     },
-    "InventorySystem.Application/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "InventorySystem.Communication/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "InventorySystem.Exception/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

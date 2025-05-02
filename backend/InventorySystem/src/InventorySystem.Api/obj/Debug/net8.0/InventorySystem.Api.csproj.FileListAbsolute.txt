@@ -70,9 +70,6 @@ C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySyste
 C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
-C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\InventorySystem.Application.dll
 C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\InventorySystem.Communication.dll
-C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\InventorySystem.Exception.dll
-C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\InventorySystem.Application.pdb
 C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\InventorySystem.Communication.pdb
-C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\InventorySystem.Exception.pdb
+C:\Cassiano C#\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.Api\bin\Debug\net8.0\FluentValidation.dll

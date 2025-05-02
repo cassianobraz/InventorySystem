@@ -1,13 +1,28 @@
 [
   {
     "ContainingType": "InventorySystem.Api.Controllers.InventoryController",
-    "Method": "GetInventory",
+    "Method": "GetAll",
     "RelativePath": "api/inventory",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "InventorySystem.Communication.Responses.ResponseAllStocksJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 204
+      }
+    ]
   },
   {
     "ContainingType": "InventorySystem.Api.Controllers.InventoryController",
@@ -18,12 +33,31 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "item",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "InventorySystem.Communication.Requests.RequestStockJson",
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "InventorySystem.Communication.Responses.ResponseShortInventoryJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      },
+      {
+        "Type": "InventorySystem.Communication.Responses.ResponseErrorMessagesJson",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
   },
   {
     "ContainingType": "InventorySystem.Api.Controllers.InventoryController",
