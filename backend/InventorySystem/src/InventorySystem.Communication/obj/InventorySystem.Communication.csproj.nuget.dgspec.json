@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {}
+    "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {}
   },
   "projects": {
-    "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {
+    "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
+        "projectUniqueName": "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
         "projectName": "InventorySystem.Communication",
-        "projectPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
+        "projectPath": "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
         "packagesPath": "C:\\Users\\cassa\\.nuget\\packages\\",
-        "outputPath": "C:\\Cassiano C#\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\obj\\",
+        "outputPath": "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

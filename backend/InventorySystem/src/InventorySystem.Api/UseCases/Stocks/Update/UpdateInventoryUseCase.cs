@@ -18,6 +18,7 @@ public class UpdateInventoryUseCase
 
         entity.NameProduct = request.NameProduct;
         entity.Amount = request.Amount;
+        entity.Price = request.Price;
 
         dbContext.Stocks.Update(entity);
         dbContext.SaveChanges();

@@ -18,6 +18,7 @@ public class RegisterInventoryUseCase
         {
             NameProduct = request.NameProduct,
             Amount = request.Amount,
+            Price = request.Price,
         };
         dbContext.Stocks.Add(entity);
         dbContext.SaveChanges();
@@ -27,6 +28,7 @@ public class RegisterInventoryUseCase
             Id = entity.Id,
             NameProduct = entity.NameProduct,
             Amount = entity.Amount,
+            Price = entity.Price,
             Create_at = entity.Create_at
         };
     }

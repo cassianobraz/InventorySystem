@@ -10,6 +10,6 @@ public class InventoryDBContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=C:\\Cassiano C#\\ROCKET\\InventoryDb.db");
+        optionsBuilder.UseSqlite("Data Source=C:\\Cassiano\\ROCKET\\InventoryDb.db");
     }
 }
