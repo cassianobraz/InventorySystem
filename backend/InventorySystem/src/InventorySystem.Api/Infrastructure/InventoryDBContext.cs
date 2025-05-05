@@ -10,6 +10,12 @@ public class InventoryDBContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("Data Source=C:\\Cassiano\\ROCKET\\InventoryDb.db");
+        var connectionString = "server=hopper.proxy.rlwy.net;port=27041;database=railway;user=root;password=luYhHqOzBWWUFhDJEcecLlsVAvKLaYKg;";
+
+        optionsBuilder.UseMySql(
+            connectionString,
+            new MySqlServerVersion(new Version(8, 0, 30)),
+            b => b.MigrationsAssembly("InventorySystem.Api")
+        );
     }
 }
