@@ -1,0 +1,41 @@
+name: Deploy ASP.NET to Railway
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'backend/InventorySystem/src/InventorySystem.Api/**'
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: |
+          cd backend/InventorySystem/src/InventorySystem.Api
+          dotnet restore
+
+      - name: Build and Publish
+        run: |
+          cd backend/InventorySystem/src/InventorySystem.Api
+          dotnet publish -c Release -o ./publish
+
+      - name: Set up Railway CLI
+        uses: railwayapp/cli-actions/setup@v1
+
+      - name: Deploy to Railway
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        run: |
+          cd backend/InventorySystem/src/InventorySystem.Api
+          railway login --token ${{ secrets.RAILWAY_TOKEN }}
+          railway up -p InventorySystem.Api --build-dir ./publish
