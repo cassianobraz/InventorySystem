@@ -39,3 +39,4 @@ jobs:
           cd backend/InventorySystem/src/InventorySystem.Api
           railway login --token ${{ secrets.RAILWAY_TOKEN }}
           railway up -p InventorySystem.Api --build-dir ./publish
+          
