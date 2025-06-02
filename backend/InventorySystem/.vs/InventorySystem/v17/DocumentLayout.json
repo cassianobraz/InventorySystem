@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\dev\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\dev\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\dev\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\usecases\\stocks\\getall\\getallinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\usecases\\stocks\\getall\\getallinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\dev\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\dev\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\usecases\\stocks\\register\\registerinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\usecases\\stocks\\register\\registerinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\dev\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\usecases\\stocks\\getbyid\\getbyinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\usecases\\stocks\\getbyid\\getbyinventoryusecase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\dev\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,67 +34,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "src\\InventorySystem.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-02T15:15:33.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\Program.cs",
-              "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Program.cs",
-              "RelativeToolTip": "src\\InventorySystem.Api\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwCcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T14:44:12.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GetAllInventoryUseCase.cs",
-              "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\UseCases\\Stocks\\GetAll\\GetAllInventoryUseCase.cs",
-              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\UseCases\\Stocks\\GetAll\\GetAllInventoryUseCase.cs",
-              "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\UseCases\\Stocks\\GetAll\\GetAllInventoryUseCase.cs",
-              "RelativeToolTip": "src\\InventorySystem.Api\\UseCases\\Stocks\\GetAll\\GetAllInventoryUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T14:36:29.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetByInventoryUseCase.cs",
-              "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\UseCases\\Stocks\\GetById\\GetByInventoryUseCase.cs",
-              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\UseCases\\Stocks\\GetById\\GetByInventoryUseCase.cs",
-              "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\UseCases\\Stocks\\GetById\\GetByInventoryUseCase.cs",
-              "RelativeToolTip": "src\\InventorySystem.Api\\UseCases\\Stocks\\GetById\\GetByInventoryUseCase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T14:37:00.433Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "InventoryController.cs",
               "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Controllers\\InventoryController.cs",
               "RelativeDocumentMoniker": "src\\InventorySystem.Api\\Controllers\\InventoryController.cs",
               "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Controllers\\InventoryController.cs",
               "RelativeToolTip": "src\\InventorySystem.Api\\Controllers\\InventoryController.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAwwGIAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAkwD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-05T00:02:25.538Z",
+              "WhenOpened": "2025-06-02T15:43:47.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RegisterInventoryUseCase.cs",
+              "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\UseCases\\Stocks\\Register\\RegisterInventoryUseCase.cs",
+              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\UseCases\\Stocks\\Register\\RegisterInventoryUseCase.cs",
+              "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\UseCases\\Stocks\\Register\\RegisterInventoryUseCase.cs",
+              "RelativeToolTip": "src\\InventorySystem.Api\\UseCases\\Stocks\\Register\\RegisterInventoryUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T15:42:53.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetByInventoryUseCase.cs",
+              "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\UseCases\\Stocks\\GetById\\GetByInventoryUseCase.cs",
+              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\UseCases\\Stocks\\GetById\\GetByInventoryUseCase.cs",
+              "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\UseCases\\Stocks\\GetById\\GetByInventoryUseCase.cs",
+              "RelativeToolTip": "src\\InventorySystem.Api\\UseCases\\Stocks\\GetById\\GetByInventoryUseCase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T15:41:48.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\Program.cs",
+              "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Program.cs",
+              "RelativeToolTip": "src\\InventorySystem.Api\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAowCkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T14:44:12.366Z",
               "EditorCaption": ""
             }
           ]

@@ -56,13 +56,13 @@ public class InventoryController : ControllerBase
     [HttpGet("{id:int}")]
     [ProducesResponseType(typeof(ResponseAllStocksJson), StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
-    public IActionResult GetById([FromRoute] int id)
+    public async Task<IActionResult> GetById([FromRoute] int id)
     {
         try
         {
-            var response = _getByIdUseCase.Execute(id);
+            var response = await _getByIdUseCase.Execute(id);
 
-            if (response.Stocks.Count == 0)
+            if (response.Stocks == null || !response.Stocks.Any())
                 return NoContent();
 
             return Ok(response);
@@ -72,6 +72,7 @@ public class InventoryController : ControllerBase
             return Problem(detail: ex.Message, statusCode: 500);
         }
     }
+
 
     [HttpPost]
     [ProducesResponseType(typeof(ResponseShortInventoryJson), StatusCodes.Status201Created)]

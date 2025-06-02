@@ -3,7 +3,6 @@ using InventorySystem.Api.Infrastructure;
 using InventorySystem.Api.UseCases.Stocks.SharedValidator;
 using InventorySystem.Communication.Requests;
 using InventorySystem.Communication.Responses;
-using System.Linq;
 
 namespace InventorySystem.Api.UseCases.Stocks.Register;
 
@@ -25,6 +24,7 @@ public class RegisterInventoryUseCase
             NameProduct = request.NameProduct,
             Amount = request.Amount,
             Price = request.Price,
+            Create_at = DateTime.UtcNow
         };
 
         _dbContext.Stocks.Add(entity);
