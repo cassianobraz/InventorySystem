@@ -1,28 +1,21 @@
 var builder = WebApplication.CreateBuilder(args);
 
-
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddRouting(options => options.LowercaseUrls = true);
-
-var builder = WebApplication.CreateBuilder(args);
-
 builder.WebHost.ConfigureKestrel(options =>
 {
     var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
     options.ListenAnyIP(Int32.Parse(port));
 });
 
-var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddRouting(options => options.LowercaseUrls = true);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", policy =>
     {
         policy
-            .AllowAnyOrigin()  
+            .AllowAnyOrigin()
             .AllowAnyMethod()
             .AllowAnyHeader();
     });
@@ -30,17 +23,15 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+app.UseCors("CorsPolicy");
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
-app.UseHttpsRedirection();
 
 app.MapControllers();
 
