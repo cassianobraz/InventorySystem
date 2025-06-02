@@ -103,9 +103,9 @@ public class InventoryController : ControllerBase
     [HttpOptions]
     public IActionResult Options()
     {
-        Response.Headers.Append("Access-Control-Allow-Origin", "https://teste-inventory.netlify.app");
-        Response.Headers.Append("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-        Response.Headers.Append("Access-Control-Allow-Headers", "Content-Type, Authorization");
+        Response.Headers.Add("Access-Control-Allow-Origin", "https://teste-inventory.netlify.app");
+        Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+        Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
         return Ok();
     }
 }
