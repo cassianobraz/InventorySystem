@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7qwWhHoH8W0=",
+  "dgSpecHash": "D2lEwkh8eZg=",
   "success": true,
-  "projectFilePath": "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
+  "projectFilePath": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

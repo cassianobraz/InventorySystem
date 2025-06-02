@@ -1,10 +1,10 @@
 using InventorySystem.Api.Infrastructure;
+using InventorySystem.Api.UseCases.Stocks.Delete;
 using InventorySystem.Api.UseCases.Stocks.GetAll;
+using InventorySystem.Api.UseCases.Stocks.GetById;
 using InventorySystem.Api.UseCases.Stocks.Register;
 using InventorySystem.Api.UseCases.Stocks.Update;
-using InventorySystem.Api.UseCases.Stocks.Delete;
 using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,6 +24,7 @@ builder.Services.AddScoped<GetAllInventoryUseCase>();
 builder.Services.AddScoped<RegisterInventoryUseCase>();
 builder.Services.AddScoped<UpdateInventoryUseCase>();
 builder.Services.AddScoped<DeleteInventoryUseCase>();
+builder.Services.AddScoped<GetByInventoryUseCase>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -44,11 +45,12 @@ var app = builder.Build();
 
 app.UseCors("CorsPolicy");
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Inventory API V1");
+    c.RoutePrefix = "swagger";
+});
 
 app.UseAuthorization();
 

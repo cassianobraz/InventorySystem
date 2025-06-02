@@ -1,5 +1,6 @@
 ﻿using InventorySystem.Api.UseCases.Stocks.Delete;
 using InventorySystem.Api.UseCases.Stocks.GetAll;
+using InventorySystem.Api.UseCases.Stocks.GetById;
 using InventorySystem.Api.UseCases.Stocks.Register;
 using InventorySystem.Api.UseCases.Stocks.Update;
 using InventorySystem.Communication.Requests;
@@ -16,17 +17,20 @@ public class InventoryController : ControllerBase
     private readonly RegisterInventoryUseCase _registerUseCase;
     private readonly UpdateInventoryUseCase _updateUseCase;
     private readonly DeleteInventoryUseCase _deleteUseCase;
+    private readonly GetByInventoryUseCase _getByIdUseCase;
 
     public InventoryController(
-        GetAllInventoryUseCase getAllUseCase,
-        RegisterInventoryUseCase registerUseCase,
-        UpdateInventoryUseCase updateUseCase,
-        DeleteInventoryUseCase deleteUseCase)
+    GetAllInventoryUseCase getAllUseCase,
+    RegisterInventoryUseCase registerUseCase,
+    UpdateInventoryUseCase updateUseCase,
+    DeleteInventoryUseCase deleteUseCase,
+    GetByInventoryUseCase getByIdUseCase)
     {
         _getAllUseCase = getAllUseCase;
         _registerUseCase = registerUseCase;
         _updateUseCase = updateUseCase;
         _deleteUseCase = deleteUseCase;
+        _getByIdUseCase = getByIdUseCase;
     }
 
     [HttpGet]
@@ -37,6 +41,26 @@ public class InventoryController : ControllerBase
         try
         {
             var response = _getAllUseCase.Execute();
+
+            if (response.Stocks.Count == 0)
+                return NoContent();
+
+            return Ok(response);
+        }
+        catch (Exception ex)
+        {
+            return Problem(detail: ex.Message, statusCode: 500);
+        }
+    }
+
+    [HttpGet("{id:int}")]
+    [ProducesResponseType(typeof(ResponseAllStocksJson), StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    public IActionResult GetById([FromRoute] int id)
+    {
+        try
+        {
+            var response = _getByIdUseCase.Execute(id);
 
             if (response.Stocks.Count == 0)
                 return NoContent();

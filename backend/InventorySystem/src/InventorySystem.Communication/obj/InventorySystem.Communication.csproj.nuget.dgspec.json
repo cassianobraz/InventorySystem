@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {}
+    "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {}
   },
   "projects": {
-    "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {
+    "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
+        "projectUniqueName": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
         "projectName": "InventorySystem.Communication",
-        "projectPath": "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
-        "packagesPath": "C:\\Users\\cassa\\.nuget\\packages\\",
-        "outputPath": "C:\\Cassiano\\ROCKET\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\obj\\",
+        "projectPath": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\InventorySystem.Communication.csproj",
+        "packagesPath": "C:\\Users\\cassiano.braz\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Communication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\cassa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cassiano.braz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
