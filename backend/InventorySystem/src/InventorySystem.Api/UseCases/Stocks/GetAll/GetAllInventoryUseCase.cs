@@ -1,25 +1,33 @@
-﻿public class GetAllInventoryUseCase
+﻿using InventorySystem.Api.Infrastructure;
+using InventorySystem.Communication.Responses;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace InventorySystem.Api.UseCases.Stocks.GetAll
 {
-    private readonly InventoryDBContext _dbContext;
-
-    public GetAllInventoryUseCase(InventoryDBContext dbContext)
+    public class GetAllInventoryUseCase
     {
-        _dbContext = dbContext;
-    }
+        private readonly InventoryDBContext _dbContext;
 
-    public ResponseAllStocksJson Execute()
-    {
-        var stocks = _dbContext.Stocks.ToList();
-
-        return new ResponseAllStocksJson
+        public GetAllInventoryUseCase(InventoryDBContext dbContext)
         {
-            Stocks = stocks.Select(stock => new ResponseShortInventoryJson
+            _dbContext = dbContext;
+        }
+
+        public ResponseAllStocksJson Execute()
+        {
+            var stocks = _dbContext.Stocks.ToList();
+
+            return new ResponseAllStocksJson
             {
-                Id = stock.Id,
-                NameProduct = stock.NameProduct,
-                Amount = stock.Amount,
-                Create_at = stock.Create_at,
-            }).ToList(),
-        };
+                Stocks = stocks.Select(stock => new ResponseShortInventoryJson
+                {
+                    Id = stock.Id,
+                    NameProduct = stock.NameProduct,
+                    Amount = stock.Amount,
+                    Create_at = stock.Create_at,
+                }).ToList(),
+            };
+        }
     }
 }
