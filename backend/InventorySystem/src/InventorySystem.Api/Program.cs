@@ -1,3 +1,11 @@
+using InventorySystem.Api.Infrastructure;
+using InventorySystem.Api.UseCases.Stocks.GetAll;
+using InventorySystem.Api.UseCases.Stocks.Register;
+using InventorySystem.Api.UseCases.Stocks.Update;
+using InventorySystem.Api.UseCases.Stocks.Delete;
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(options =>
