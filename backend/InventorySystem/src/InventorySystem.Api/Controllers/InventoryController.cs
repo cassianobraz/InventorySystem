@@ -1,6 +1,5 @@
 ﻿using InventorySystem.Api.UseCases.Stocks.Delete;
 using InventorySystem.Api.UseCases.Stocks.GetAll;
-using InventorySystem.Api.UseCases.Stocks.GetById;
 using InventorySystem.Api.UseCases.Stocks.Register;
 using InventorySystem.Api.UseCases.Stocks.Update;
 using InventorySystem.Communication.Requests;
