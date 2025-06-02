@@ -45,7 +45,7 @@ public class InventoryController : ControllerBase
         }
         catch (Exception ex)
         {
-            return Problem("Error searching for stock", statusCode: 500, detail: ex.Message);
+            return Problem(detail: ex.Message, statusCode: 500);
         }
     }
 
@@ -62,7 +62,7 @@ public class InventoryController : ControllerBase
         }
         catch (Exception ex)
         {
-            return Problem("Error creating new item", statusCode: 500, detail: ex.Message);
+            return Problem(detail: ex.Message, statusCode: 500);
         }
     }
 
@@ -80,7 +80,7 @@ public class InventoryController : ControllerBase
         }
         catch (Exception ex)
         {
-            return Problem("Error updating item", statusCode: 500, detail: ex.Message);
+            return Problem(detail: ex.Message, statusCode: 500);
         }
     }
 
@@ -97,7 +97,7 @@ public class InventoryController : ControllerBase
         }
         catch (Exception ex)
         {
-            return Problem("Error deleting item", statusCode: 500, detail: ex.Message);
+            return Problem(detail: ex.Message, statusCode: 500);
         }
     }
 }
