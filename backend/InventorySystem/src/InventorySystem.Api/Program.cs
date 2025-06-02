@@ -6,6 +6,17 @@ builder.WebHost.ConfigureKestrel(options =>
     options.ListenAnyIP(Int32.Parse(port));
 });
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<InventoryDBContext>(options =>
+    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 30)),
+        b => b.MigrationsAssembly("InventorySystem.Api")));
+
+builder.Services.AddScoped<GetAllInventoryUseCase>();
+builder.Services.AddScoped<RegisterInventoryUseCase>();
+builder.Services.AddScoped<UpdateInventoryUseCase>();
+builder.Services.AddScoped<DeleteInventoryUseCase>();
+
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

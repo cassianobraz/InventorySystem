@@ -3,16 +3,22 @@ using InventorySystem.Api.Infrastructure;
 using InventorySystem.Api.UseCases.Stocks.SharedValidator;
 using InventorySystem.Communication.Requests;
 using InventorySystem.Communication.Responses;
+using System.Linq;
 
 namespace InventorySystem.Api.UseCases.Stocks.Register;
 
 public class RegisterInventoryUseCase
 {
+    private readonly InventoryDBContext _dbContext;
+
+    public RegisterInventoryUseCase(InventoryDBContext dbContext)
+    {
+        _dbContext = dbContext;
+    }
+
     public ResponseShortInventoryJson Execute(RequestStockJson request)
     {
         Validate(request);
-
-        var dbContext = new InventoryDBContext();
 
         var entity = new Stock
         {
@@ -20,8 +26,9 @@ public class RegisterInventoryUseCase
             Amount = request.Amount,
             Price = request.Price,
         };
-        dbContext.Stocks.Add(entity);
-        dbContext.SaveChanges();
+
+        _dbContext.Stocks.Add(entity);
+        _dbContext.SaveChanges();
 
         return new ResponseShortInventoryJson
         {
@@ -39,11 +46,10 @@ public class RegisterInventoryUseCase
 
         var result = validator.Validate(request);
 
-        if (result.IsValid == false)
+        if (!result.IsValid)
         {
             var erros = result.Errors.Select(failure => failure.ErrorMessage).ToList();
-
-            throw new ArgumentException("Validation error", string.Join(", ", erros));
+            throw new ArgumentException("Validation error: " + string.Join(", ", erros));
         }
     }
 }

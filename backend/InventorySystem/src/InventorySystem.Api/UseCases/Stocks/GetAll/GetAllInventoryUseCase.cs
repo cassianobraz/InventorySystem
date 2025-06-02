@@ -1,15 +1,15 @@
-﻿using InventorySystem.Api.Infrastructure;
-using InventorySystem.Communication.Responses;
-
-namespace InventorySystem.Api.UseCases.Stocks.GetAll;
-
-public class GetAllInventoryUseCase
+﻿public class GetAllInventoryUseCase
 {
+    private readonly InventoryDBContext _dbContext;
+
+    public GetAllInventoryUseCase(InventoryDBContext dbContext)
+    {
+        _dbContext = dbContext;
+    }
+
     public ResponseAllStocksJson Execute()
     {
-        var dbContext = new InventoryDBContext();
-
-        var stocks = dbContext.Stocks.ToList();
+        var stocks = _dbContext.Stocks.ToList();
 
         return new ResponseAllStocksJson
         {
@@ -20,6 +20,6 @@ public class GetAllInventoryUseCase
                 Amount = stock.Amount,
                 Create_at = stock.Create_at,
             }).ToList(),
-        };       
+        };
     }
 }
