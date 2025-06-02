@@ -10,7 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.WebHost.ConfigureKestrel(options =>
 {
     var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-    options.ListenAnyIP(int.Parse(port));
+    builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
+});
+
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenAnyIP(8080); 
 });
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -33,9 +38,11 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy", policy =>
     {
-        policy.WithOrigins("https://teste-inventory.netlify.app")
-              .AllowAnyMethod()
-              .AllowAnyHeader();
+        policy
+            .WithOrigins("https://teste-inventory.netlify.app")
+            .WithHeaders("Content-Type", "Authorization", "X-Requested-With")
+            .WithMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+            .AllowCredentials();
     });
 });
 
