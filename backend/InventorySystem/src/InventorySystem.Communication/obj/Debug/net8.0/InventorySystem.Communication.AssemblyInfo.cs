@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InventorySystem.Communication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8984efdbdb46c57443226072280ab220628407e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84da037f5a6a7a590dca457ef48f070ba186ffd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventorySystem.Communication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InventorySystem.Communication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

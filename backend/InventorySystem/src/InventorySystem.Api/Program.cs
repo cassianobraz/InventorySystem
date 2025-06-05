@@ -5,12 +5,13 @@ using InventorySystem.Api.UseCases.Stocks.Register;
 using InventorySystem.Api.UseCases.Stocks.Update;
 using Microsoft.EntityFrameworkCore;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<InventoryDBContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"),
+    options.UseNpgsql(connectionString,
         b => b.MigrationsAssembly("InventorySystem.Api")));
 
 builder.Services.AddScoped<GetAllInventoryUseCase>();

@@ -19,20 +19,18 @@ public class UpdateInventoryUseCase
 
         var entity = _dbContext.Stocks.FirstOrDefault(stock => stock.Id == id);
         if (entity is null)
-            throw new Exception("Product not found");
+            throw new KeyNotFoundException("Product not found");
 
         entity.NameProduct = request.NameProduct;
         entity.Amount = request.Amount;
         entity.Price = request.Price;
 
-        _dbContext.Stocks.Update(entity);
         _dbContext.SaveChanges();
     }
 
     private void Validate(RequestStockJson request)
     {
         var validator = new RequestStockValidator();
-
         var result = validator.Validate(request);
 
         if (!result.IsValid)

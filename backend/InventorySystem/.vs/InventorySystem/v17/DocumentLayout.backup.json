@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\dev\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\entities\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\entities\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|c:\\dev\\inventorysystem\\backend\\inventorysystem\\src\\inventorysystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1EDC414B-AE89-49E1-9B1E-1595B7FFBB6B}|src\\InventorySystem.Api\\InventorySystem.Api.csproj|solutionrelative:src\\inventorysystem.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +14,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Stock.cs",
-              "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Entities\\Stock.cs",
-              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\Entities\\Stock.cs",
-              "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Entities\\Stock.cs",
-              "RelativeToolTip": "src\\InventorySystem.Api\\Entities\\Stock.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\InventorySystem.Api\\Program.cs",
+              "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Program.cs",
+              "RelativeToolTip": "src\\InventorySystem.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T12:43:42.388Z",
+              "WhenOpened": "2025-06-05T13:18:04.857Z",
+              "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
