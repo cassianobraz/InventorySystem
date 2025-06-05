@@ -14,6 +14,8 @@ builder.Services.AddDbContext<InventoryDBContext>(options =>
     options.UseNpgsql(connectionString,
         b => b.MigrationsAssembly("InventorySystem.Api")));
 
+builder.WebHost.UseUrls("http://0.0.0.0:*");
+
 builder.Services.AddScoped<GetAllInventoryUseCase>();
 builder.Services.AddScoped<RegisterInventoryUseCase>();
 builder.Services.AddScoped<UpdateInventoryUseCase>();
