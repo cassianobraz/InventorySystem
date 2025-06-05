@@ -1,5 +1,4 @@
 ﻿using InventorySystem.Api.Infrastructure;
-using System.Linq;
 
 namespace InventorySystem.Api.UseCases.Stocks.Delete;
 

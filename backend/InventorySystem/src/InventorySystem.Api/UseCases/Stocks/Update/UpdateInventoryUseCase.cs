@@ -1,7 +1,6 @@
 ﻿using InventorySystem.Api.Infrastructure;
 using InventorySystem.Api.UseCases.Stocks.SharedValidator;
 using InventorySystem.Communication.Requests;
-using System.Linq;
 
 namespace InventorySystem.Api.UseCases.Stocks.Update;
 

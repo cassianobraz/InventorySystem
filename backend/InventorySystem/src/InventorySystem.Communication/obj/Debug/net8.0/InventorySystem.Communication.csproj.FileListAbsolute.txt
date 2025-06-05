@@ -25,6 +25,7 @@ C:\Cassiano\ROCKET\InventorySystem\backend\InventorySystem\src\InventorySystem.C
 C:\dev\InventorySystem\backend\InventorySystem\src\InventorySystem.Communication\bin\Debug\net8.0\InventorySystem.Communication.deps.json
 C:\dev\InventorySystem\backend\InventorySystem\src\InventorySystem.Communication\bin\Debug\net8.0\InventorySystem.Communication.dll
 C:\dev\InventorySystem\backend\InventorySystem\src\InventorySystem.Communication\bin\Debug\net8.0\InventorySystem.Communication.pdb
+C:\dev\InventorySystem\backend\InventorySystem\src\InventorySystem.Communication\obj\Debug\net8.0\InventorySystem.Communication.csproj.AssemblyReference.cache
 C:\dev\InventorySystem\backend\InventorySystem\src\InventorySystem.Communication\obj\Debug\net8.0\InventorySystem.Communication.GeneratedMSBuildEditorConfig.editorconfig
 C:\dev\InventorySystem\backend\InventorySystem\src\InventorySystem.Communication\obj\Debug\net8.0\InventorySystem.Communication.AssemblyInfoInputs.cache
 C:\dev\InventorySystem\backend\InventorySystem\src\InventorySystem.Communication\obj\Debug\net8.0\InventorySystem.Communication.AssemblyInfo.cs

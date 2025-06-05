@@ -1,7 +1,5 @@
 ﻿using InventorySystem.Api.Infrastructure;
 using InventorySystem.Communication.Responses;
-using System.Linq;
-using System.Collections.Generic;
 
 namespace InventorySystem.Api.UseCases.Stocks.GetAll
 {

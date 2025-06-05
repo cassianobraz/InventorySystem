@@ -100,12 +100,4 @@ public class InventoryController : ControllerBase
             return Problem(detail: ex.Message, statusCode: 500);
         }
     }
-    [HttpOptions]
-    public IActionResult Options()
-    {
-        Response.Headers.Add("Access-Control-Allow-Origin", "https://teste-inventory.netlify.app");
-        Response.Headers.Add("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-        Response.Headers.Add("Access-Control-Allow-Headers", "Content-Type, Authorization");
-        return Ok();
-    }
 }

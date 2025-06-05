@@ -7,13 +7,10 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
-builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
-
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<InventoryDBContext>(options =>
-    options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 30)),
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"),
         b => b.MigrationsAssembly("InventorySystem.Api")));
 
 builder.Services.AddScoped<GetAllInventoryUseCase>();
@@ -28,12 +25,12 @@ builder.Services.AddRouting(options => options.LowercaseUrls = true);
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("CorsPolicy", policy =>
+    options.AddPolicy("CorsPolicy", builder =>
     {
-        policy
-            .WithOrigins("*")
-            .WithHeaders("Content-Type", "Authorization", "X-Requested-With")
-            .WithMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+        builder
+            .WithOrigins("https://teste-inventory.netlify.app/")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
             .AllowCredentials();
     });
 });
