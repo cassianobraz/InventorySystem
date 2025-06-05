@@ -1,10 +1,9 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copia todo o conteúdo dos projetos (inclusive os outros .csproj)
 COPY InventorySystem/src ./InventorySystem/src
 
-WORKDIR /src/backend/InventorySystem/src/InventorySystem.Api
+WORKDIR /src/InventorySystem/src/InventorySystem.Api
 
 RUN dotnet restore "InventorySystem.Api.csproj"
 RUN dotnet build "InventorySystem.Api.csproj" -c Release -o /app/build
