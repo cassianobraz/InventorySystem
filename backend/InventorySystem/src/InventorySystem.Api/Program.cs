@@ -5,16 +5,16 @@ using InventorySystem.Api.UseCases.Stocks.Register;
 using InventorySystem.Api.UseCases.Stocks.Update;
 using Microsoft.EntityFrameworkCore;
 
-
 var builder = WebApplication.CreateBuilder(args);
+
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 builder.Services.AddDbContext<InventoryDBContext>(options =>
     options.UseNpgsql(connectionString,
         b => b.MigrationsAssembly("InventorySystem.Api")));
-
-builder.WebHost.UseUrls("http://0.0.0.0:10000");
 
 builder.Services.AddScoped<GetAllInventoryUseCase>();
 builder.Services.AddScoped<RegisterInventoryUseCase>();
