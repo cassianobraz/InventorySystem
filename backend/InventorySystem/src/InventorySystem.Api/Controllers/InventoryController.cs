@@ -30,23 +30,14 @@ public class InventoryController : ControllerBase
     }
 
     [HttpGet]
-    [ProducesResponseType(typeof(ResponseAllStocksJson), StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public IActionResult GetAll()
     {
-        try
-        {
-            var response = _getAllUseCase.Execute();
+        var response = _getAllUseCase.Execute();
 
-            if (response.Stocks.Count == 0)
-                return NoContent();
+        if (response.Stocks.Count == 0)
+            return NoContent();
 
-            return Ok(response);
-        }
-        catch (Exception ex)
-        {
-            return Problem(detail: ex.Message, statusCode: 500);
-        }
+        return Ok(response);
     }
 
     [HttpPost]
