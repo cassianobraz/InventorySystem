@@ -23,6 +23,7 @@ namespace InventorySystem.Api.UseCases.Stocks.GetAll
                     Id = stock.Id,
                     NameProduct = stock.NameProduct,
                     Amount = stock.Amount,
+                    Price = stock.Price,
                     Create_at = stock.Create_at,
                 }).ToList(),
             };
