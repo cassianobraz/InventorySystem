@@ -28,11 +28,15 @@
               "RelativeDocumentMoniker": "src\\InventorySystem.Api\\Program.cs",
               "ToolTip": "C:\\dev\\InventorySystem\\backend\\InventorySystem\\src\\InventorySystem.Api\\Program.cs",
               "RelativeToolTip": "src\\InventorySystem.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAcwDEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T13:18:04.857Z",
               "IsPinned": true,
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -44,12 +48,7 @@
               "RelativeToolTip": "src\\InventorySystem.Api\\Controllers\\InventoryController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T13:34:22.332Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-06-06T13:34:22.332Z"
             }
           ]
         }
